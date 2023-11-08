@@ -1,0 +1,255 @@
+[
+    {
+      "type": "function",
+      "name": "chats",
+      "inputs": [
+        {
+          "type": "string",
+          "name": "",
+          "internalType": "string"
+        },
+        {
+          "type": "uint256",
+          "name": "",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "string",
+          "name": "frnd",
+          "internalType": "string"
+        },
+        {
+          "type": "string",
+          "name": "message",
+          "internalType": "string"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "createUser",
+      "inputs": [
+        {
+          "type": "string",
+          "name": "username",
+          "internalType": "string"
+        },
+        {
+          "type": "string",
+          "name": "email",
+          "internalType": "string"
+        },
+        {
+          "type": "string",
+          "name": "password",
+          "internalType": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "tuple",
+          "name": "",
+          "components": [
+            {
+              "type": "string",
+              "name": "name",
+              "internalType": "string"
+            },
+            {
+              "type": "string",
+              "name": "mail",
+              "internalType": "string"
+            },
+            {
+              "type": "bytes32",
+              "name": "passwd",
+              "internalType": "bytes32"
+            }
+          ],
+          "internalType": "struct Messenger.User"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "getAllMessages",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "tuple[]",
+          "name": "",
+          "components": [
+            {
+              "type": "string",
+              "name": "frnd",
+              "internalType": "string"
+            },
+            {
+              "type": "string",
+              "name": "message",
+              "internalType": "string"
+            }
+          ],
+          "internalType": "struct Messenger.Chat[]"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getAllUsers",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "string[]",
+          "name": "",
+          "internalType": "string[]"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "isLoggedIn",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "bool",
+          "name": "",
+          "internalType": "bool"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "logOut",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "loggedInUserName",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "string",
+          "name": "",
+          "internalType": "string"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "loginUser",
+      "inputs": [
+        {
+          "type": "string",
+          "name": "username",
+          "internalType": "string"
+        },
+        {
+          "type": "string",
+          "name": "password",
+          "internalType": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "tuple",
+          "name": "",
+          "components": [
+            {
+              "type": "string",
+              "name": "name",
+              "internalType": "string"
+            },
+            {
+              "type": "string",
+              "name": "mail",
+              "internalType": "string"
+            },
+            {
+              "type": "bytes32",
+              "name": "passwd",
+              "internalType": "bytes32"
+            }
+          ],
+          "internalType": "struct Messenger.User"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "sendMessage",
+      "inputs": [
+        {
+          "type": "string",
+          "name": "friend",
+          "internalType": "string"
+        },
+        {
+          "type": "string",
+          "name": "message",
+          "internalType": "string"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "usernames",
+      "inputs": [
+        {
+          "type": "uint256",
+          "name": "",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "string",
+          "name": "",
+          "internalType": "string"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "users",
+      "inputs": [
+        {
+          "type": "string",
+          "name": "",
+          "internalType": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "string",
+          "name": "name",
+          "internalType": "string"
+        },
+        {
+          "type": "string",
+          "name": "mail",
+          "internalType": "string"
+        },
+        {
+          "type": "bytes32",
+          "name": "passwd",
+          "internalType": "bytes32"
+        }
+      ],
+      "stateMutability": "view"
+    }
+  ]
